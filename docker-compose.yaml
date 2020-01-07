@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   gitlab-web:
-    image: gitlab/gitlab-ee:latest
+    image: gitlab/gitlab-ce:latest
     container_name: gitlab-web
     hostname: gitlab-web
     volumes:
@@ -11,7 +11,7 @@ services:
       - 'gitlab-data:/var/opt/gitlab'
     ports:
       - '22:22'
-      - '80:80'
+      - '8080:80'
       - '443:443'
       - '4567:4567'
       - '9090:9090'

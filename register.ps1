@@ -1,3 +1,4 @@
+${registration-token}=$args[0]
 docker exec -it gitlab-runner `
   gitlab-runner register `
  --non-interactive `
